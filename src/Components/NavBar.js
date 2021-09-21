@@ -1,7 +1,10 @@
 import React from "react";
+import Header from "./Header";
+import './NavBar.css'
 function NavBar(){
     return(
-        <div>
+        <div className="header">
+        <div className="navBar">
             <h1 className="logo">Food</h1>
             <ul className="nav-bar">
                 <li>
@@ -14,7 +17,10 @@ function NavBar(){
                  Recipe food
                 </li>
             </ul>
+            
         </div>
+      <Header />
+         </div>
     )
 }
 export default NavBar;

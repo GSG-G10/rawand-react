@@ -1,0 +1,42 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.nav-bar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-bar li{
+    padding-left: 15px;
+    font-size: 18px;
+    padding-top: 18px;
+}
+.contact{
+    padding-top: 25px;
+}
+.contact .title{
+color: #000;
+padding-top: 15px;
+text-align: center;
+
+
+}
+.btn{
+    background-color: rgb(12, 124, 124);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    margin-left: 48%;
+    margin-top: 2%;
+    padding: 10px 20px;
+}
+.header{
+    background-image: url('https://image.freepik.com/free-photo/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table_181624-34062.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
