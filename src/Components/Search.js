@@ -1,5 +1,6 @@
 import React ,{useState,useEffect, useContext}from "react"
 import ContextData from '../ContextAdivce/ContextData'
+import './Search.css'
 function Search(){
    
     const [input,setInput] = useState("")
@@ -17,7 +18,7 @@ function Search(){
    
     return(
 <div>
- <input value={input} onChange={(e)=>setInput(e.target.value)}/>
+ <input value={input} onChange={(e)=>setInput(e.target.value)} className="input" placeholder="Search Here"/>
 
  </div>
     )

@@ -5,7 +5,7 @@ function NavBar(){
     return(
         <div className="header">
         <div className="navBar">
-            <h1 className="logo">Advice</h1>
+            <h1 className="logo">FOOD RECIPE</h1>
             <ul className="nav-bar">
                 <li>
                  Home
@@ -14,7 +14,7 @@ function NavBar(){
                  About
                 </li>
                 <li>
-                Advice list
+              Menu
                 </li>
             </ul>
             
