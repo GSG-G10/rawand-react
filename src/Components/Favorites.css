@@ -11,8 +11,9 @@
 .pictures{
     background-image: url('../images/v4.jpg');
     background-repeat: no-repeat;
-    height: 800px;
+    height: 600px;
     width: 50%;
+    background-size: cover;
 }
 .title
 {
