@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import NavBar from "./Components/NavBar";
 import MainContent from "./Components/MainContent";
-import ContextAdvice from "./ContextAdivce/ContextAdvice";
+import ContextData from "./ContextAdivce/ContextData";
 import Search from "./Components/Search";
+import {  BrowserRouter,Route} from "react-router-dom";
+import Favorite from './Components/Favorite'
 function App(){
-    const [data,setData]=useState("")
+    const [data,setData]=useState([])
     return(
         <div>
         <NavBar />
-        <ContextAdvice.Provider value={{data,setData}}>
-        <Search/>
-        <MainContent/>
-        </ContextAdvice.Provider>
-     
+        <BrowserRouter>
+       
+        <ContextData.Provider value={{data,setData}}>
+        <Route   component={Favorite} path="/Favorite" exact />
+       
+        <Route   component={MainContent} path="/" exact >
+       
+        </Route>
+   
+        {/* <Search/> */}
+       
+        </ContextData.Provider>
+     </BrowserRouter>
        </div>
     )
 
