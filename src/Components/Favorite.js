@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import ContextData from "../ContextAdivce/ContextData";
+
 import './Favorites.css'
 function Favorite (){
-    const {data}=useContext(ContextData)
+  
     return(
         <div className="container">
            
@@ -15,7 +15,7 @@ function Favorite (){
            )}  
                </div>
           
-            <div className="picture"></div>
+            <div className="pictures"></div>
         </div>
     )
 

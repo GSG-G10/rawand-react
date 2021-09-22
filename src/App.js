@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./Components/NavBar";
 import MainContent from "./Components/MainContent";
 import ContextData from "./ContextAdivce/ContextData";
-import Search from "./Components/Search";
+
 import {  BrowserRouter,Route} from "react-router-dom";
 import Favorite from './Components/Favorite'
 function App(){
@@ -19,7 +19,7 @@ function App(){
        
         </Route>
    
-        {/* <Search/> */}
+      
        
         </ContextData.Provider>
      </BrowserRouter>
