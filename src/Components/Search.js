@@ -1,19 +1,24 @@
 import React ,{useState,useEffect, useContext}from "react"
-import ContextAdvice from '../ContextAdivce/ContextAdvice'
+import ContextData from '../ContextAdivce/ContextData'
 function Search(){
-    
+   
     const [input,setInput] = useState("")
-    const {data,setData}= useContext(ContextAdvice)
+    const {data,setData}= useContext(ContextData)
     useEffect (()=>{
-        fetch(`https://api.adviceslip.com/advice/search/${input}`)
+        let isActive = true;
+        isActive && 
+        (fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`)
         .then((res)=>res.json())
-        .then((res)=>setData(res.slips[0]))
+        .then((res)=>setData(res.meals[0])))
+      return ()=>{
+            isActive=false
+         }
     },[input])
    
     return(
 <div>
  <input value={input} onChange={(e)=>setInput(e.target.value)}/>
- <a>Favorite</a>
+
  </div>
     )
 }
