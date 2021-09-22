@@ -1,15 +1,21 @@
 import React, { useContext } from "react";
 import ContextData from "../ContextAdivce/ContextData";
+import './Favorites.css'
 function Favorite (){
     const {data}=useContext(ContextData)
     return(
-        <div>
-            {console.log(data)}
+        <div className="container">
            
-            <p>
-           
-            {JSON.parse(localStorage.getItem('data'))}
-            </p>
+           <div className="favorite-content">
+          <h1 className="title">Favorites</h1>
+               
+           {JSON.parse(localStorage.getItem('data')).map((data)=>
+          
+          <p className="fav-data">{data}</p>
+           )}  
+               </div>
+          
+            <div className="picture"></div>
         </div>
     )
 

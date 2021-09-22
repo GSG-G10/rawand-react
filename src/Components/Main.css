@@ -1,0 +1,50 @@
+.conatiner{
+    display: flex;
+
+    flex-direction: row;
+  
+}
+.picture{
+ background-image: url('../images/v3.jpg');
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 750px;
+    background-size: cover;
+}
+
+.content{
+    width: 50%;
+    background-color: rgb(49, 49, 49);
+}
+.favorite{
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    color: rgb(104, 6, 6);
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.data{
+    padding-left: 15px;
+    border: 1px solid #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #fff;
+    margin-top: 5%;
+    margin: 5%;
+}
+.meal
+{
+    color: #777;
+    font-size: 18px;
+    font-weight: bold;
+}
+.add-btn{
+    padding: 10px 20px;
+   
+    margin-bottom: 2%;
+    border-radius: 25px;
+    background-color: #7777;
+    color: #fff;
+}

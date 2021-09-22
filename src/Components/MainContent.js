@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 import ContextData from '../ContextAdivce/ContextData'
 import Search from "./Search";
 
+
+import './Main.css'
 function MainContent (){
    
 const {data}= React.useContext(ContextData)
@@ -27,21 +29,29 @@ const handelClick = ()=>{
 }
 
     return(
-        <div>
-           {/* <p>{data.strCategory}</p> */}
+        <div className="conatiner">
+            <div className="picture">dcd</div>
+            <div className="content">
+            <div className="data">
+       
            <Search />
-          <Link to="/Favorite"><li>Favorite</li></Link>
+          <Link to="/Favorite"><li className="favorite">Favorite</li></Link>
           
            {data && (
         <>
-          <p> meal Catagories :{data.strCategory}</p>
-          <p>meal Instruction :{data.strInstructions}</p>
+      
+        <p><span className= "meal">StrMeal : </span>{data.strMeal}</p>
+          <p><span className= "meal"> Meal Catagories : </span>{data.strCategory}</p>
+          <p> <p className= "meal"> Meal Instruction : </p>{data.strInstructions}</p>
 
 
-          <button onClick={handelClick}>Add to favariate </button>
+          <button onClick={handelClick} className="add-btn">Add to favariate </button>
 
         </>
+        
       )}
+      </div>
+      </div>
              </div>
  
     )
