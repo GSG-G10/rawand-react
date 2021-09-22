@@ -15,7 +15,7 @@ function Favorite (){
            )}  
                </div>
           
-            <div className="picture"></div>
+            <div className="pictures"></div>
         </div>
     )
 

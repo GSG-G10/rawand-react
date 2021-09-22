@@ -8,10 +8,10 @@
     width: 50%;
     background-color: #666;
 }
-.picture{
+.pictures{
     background-image: url('../images/v4.jpg');
     background-repeat: no-repeat;
-    height: 600px;
+    height: 800px;
     width: 50%;
 }
 .title

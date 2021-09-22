@@ -5,10 +5,10 @@
   
 }
 .picture{
- background-image: url('../images/v3.jpg');
+ background-image: url('../images/v4.jpg');
     background-repeat: no-repeat;
     width: 50%;
-    height: 750px;
+    height: 900px;
     background-size: cover;
 }
 
