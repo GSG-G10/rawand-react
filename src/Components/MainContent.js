@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 import ContextData from '../ContextAdivce/ContextData'
 import Search from "./Search";
-
-
 import './Main.css'
 function MainContent (){
    
@@ -21,11 +19,7 @@ useEffect(()=>{
 
 const handelClick = ()=>{
     setCount((count)=>count+1)
-   
-    // localStorage.setItem('strMeal',setStrMeal(data.map(data=>{
-    //         return data.strMeal
-    // })))
-    // {console.log(strMeal)}
+ 
 }
 
     return(

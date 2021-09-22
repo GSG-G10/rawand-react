@@ -4,7 +4,7 @@ import './Search.css'
 function Search(){
    
     const [input,setInput] = useState("")
-    const {data,setData}= useContext(ContextData)
+    const {setData}= useContext(ContextData)
     useEffect (()=>{
         let isActive = true;
         isActive && 
